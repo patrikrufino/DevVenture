@@ -5,11 +5,15 @@ Quem é o mais sortudo da sua turma?
 Com este app agora você e seus amigos podem descobrir.
 
 ## Pensando no projeto 🤔
-🙈Du, 🙉Edu e 🙊Dudu entraram em discussão de quem era o mais sortudo. 
+🙈Du, 🙉Edu e 🙊Dudu entraram em discussão de quem era o mais sortudo.
+
 Então decidiram jogar dados e ver quem tirava o número maior.
-Mas o 🐕 Coragem, um cachorro de um vizinho, engoliu os dados. 
-Agora resta apenas um computador com 64GB de ram equipado com Android Studio e Chrome 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥.
-E a única solução para descobrirem que é o mais sortudo é um aplicativo de dados aleatórios.
+
+Mas o 🐕 Coragem, um cachorro de um vizinho, engoliu os dados.
+
+Agora resta apenas um computador com 🤑 64GB de ram (😆 Talvez falte um pouco...) equipado com Android Studio e Chrome 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥.
+
+E a única solução para descobrirem quem é o mais sortudo é um aplicativo de dados aleatórios.
 
 ### Questões 🤓
 * Qual o problema a resolver?
