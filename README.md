@@ -1,4 +1,4 @@
-![https://d335luupugsy2.cloudfront.net/cms/files/68179/1585008257/$1xulesjk6gwj]()
+![](https://d335luupugsy2.cloudfront.net/cms/files/68179/1585008257/$1xulesjk6gwj)
 
 # Bootcamp de Android com a Venture
 
