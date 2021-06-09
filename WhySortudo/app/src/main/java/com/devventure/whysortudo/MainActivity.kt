@@ -3,6 +3,7 @@ package com.devventure.whysortudo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -10,17 +11,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val dado01 = findViewById<TextView>(R.id.txt_dado01) as TextView
-        val dado02 = findViewById<TextView>(R.id.txt_dado02) as TextView
+        val dice01 = findViewById<ImageView>(R.id.img_dice01) as ImageView
+        val dice02 = findViewById<ImageView>(R.id.img_dice02) as ImageView
         val btnPlay = findViewById<TextView>(R.id.btn_jogar) as Button
 
-        btnPlay.setOnClickListener() {
-            dado01.text = getNumberRandom().toString()
-            dado02.text = getNumberRandom().toString()
+        // List of dices
+        val dices = listOf(
+            R.drawable.dice_1,
+            R.drawable.dice_2,
+            R.drawable.dice_3,
+            R.drawable.dice_4,
+            R.drawable.dice_5,
+            R.drawable.dice_6,
+        )
+
+        btnPlay.setOnClickListener {
+            dice01.setImageResource(dices.random())
+            dice02.setImageResource(dices.random())
         }
     }
 
-    private fun getNumberRandom(): Int {
-        return (1..6).random()
-    }
 }
