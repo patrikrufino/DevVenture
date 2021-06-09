@@ -1,0 +1,12 @@
+1 - Problema:
+	Ajudar as pessoas a encontrarem a pessoa mais sortudas com um jogo de dados virtuais.
+
+2 - A maneira mais simples de resolver o problema:
+	Criar um dado onde ele fica girando, e clicamos nele para parar ou recomeçar
+
+3 - Etapas:
+	1 - Criaria inicialmente um dado que ficasse girando e pudesse ser parado;
+	2 - Criaria um botão para controlar o dado;
+	3 - Criaria um segundo dado;
+	4 - Criaria uma activity onde pudesse registrar o nome do jogador;
+	5 - Na tela dos dados mostraria a pontuação junto com o nome;
