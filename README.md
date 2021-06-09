@@ -6,5 +6,5 @@ Aqui você encontra os projetos, desafios e exercícios que foram realizados no 
 
 ## Confira alguns:
 
-[](MeuPrimeiroProjeto)
-[](WhySortudo)
+[MeuPrimeiroProjeto](https://github.com/patrikrufino/DevVenture/tree/main/MeuPrimeiroProjeto)
+[WhySortudo](https://github.com/patrikrufino/DevVenture/tree/main/WhySortudo)
