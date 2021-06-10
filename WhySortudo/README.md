@@ -22,11 +22,20 @@ E a única solução para descobrirem quem é o mais sortudo é um aplicativo de
 
 [Confere aqui o que eu respondi!](https://github.com/patrikrufino/DevVenture/blob/main/WhySortudo/PensandoNoProjeto.txt)
 
-### 1 Primeira Etapa
+### 1ª Etapa
 
 <b>MVP que resolve o problema</b>
 Visando resolver o problema mais rápido possível, criamos um aplicativo que ao clicar no botão jogar, ele traz 2 números aleatórios de 1 a 6.
 
 ![Primeira Etapa](https://github.com/patrikrufino/DevVenture/blob/main/WhySortudo/img/Etapa%2001.png?raw=true)
+
+### 2ª Etapa
+
+<b>MVP que encanta</b>
+Agora o projeto vem com dados que deixam a jogatina mais visual.
+
+https://user-images.githubusercontent.com/58515198/121449164-a2835180-c96f-11eb-9f76-16ad9bf3e456.mp4
+
+
 
 
