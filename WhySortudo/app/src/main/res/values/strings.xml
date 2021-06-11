@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">WhySortudo</string>
+    <string name="name_player">Player Name</string>
+    <string name="register">Register</string>
+    <string name="welcome">Is today your lucky day %s ?</string>
+    <string name="play_dices">Play Dices</string>
 </resources>
