@@ -38,4 +38,10 @@ https://user-images.githubusercontent.com/58515198/121449164-a2835180-c96f-11eb-
 
 
 
+### 3ª Etapa
+
+Agora temos um app que recebe o nome do jogador e exibi no momento da jogatina, além disso foi adicionado um botão share para compartilhar o resultado pelo WhatsApp.
+
+https://user-images.githubusercontent.com/58515198/121724206-eb492080-cabd-11eb-8251-02ff4431e6d2.mp4
+
 
