@@ -7,9 +7,19 @@
     <fragment
         android:id="@+id/registerUserFragment"
         android:name="com.devventure.whysortudo.RegisterUserFragment"
-        android:label="RegisterUserFragment" />
+        android:label="RegisterUserFragment" >
+        <action
+            android:id="@+id/action_registerUserFragment_to_throwDicesFragment3"
+            app:destination="@id/throwDicesFragment" />
+    </fragment>
     <fragment
         android:id="@+id/throwDicesFragment"
         android:name="com.devventure.whysortudo.ThrowDicesFragment"
-        android:label="ThrowDicesFragment" />
+        android:label="ThrowDicesFragment" >
+        <argument
+            android:name="playerName"
+            app:argType="string"
+            android:defaultValue="Guest1896"/>
+
+    </fragment>
 </navigation>

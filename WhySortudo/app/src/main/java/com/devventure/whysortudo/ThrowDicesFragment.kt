@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import com.devventure.whysortudo.databinding.FragmentThrowDicesBinding
 
 class ThrowDicesFragment : Fragment() {
-    private var binding : FragmentThrowDicesBinding? = null
+    private var binding: FragmentThrowDicesBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,12 +24,7 @@ class ThrowDicesFragment : Fragment() {
         val welcome = binding?.textViewWelcome
         val shareButton = binding?.share
 
-        val player = "Player Name"
-
-        val message = getString(R.string.welcome, player)
-
-
-        welcome?.text = message
+        welcome?.text = arguments?.getString("playerName")
 
         shareButton?.setOnClickListener {
             val intent = Intent(Intent.ACTION_SEND)
