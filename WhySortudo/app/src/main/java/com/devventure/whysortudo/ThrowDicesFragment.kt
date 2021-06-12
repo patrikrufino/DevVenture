@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import com.devventure.whysortudo.databinding.FragmentThrowDicesBinding
 
 class ThrowDicesFragment : Fragment() {
-    var binding : FragmentThrowDicesBinding? = null
+    private var binding : FragmentThrowDicesBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
