@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">AboutMyPet</string>
+    <string name="cameron">Cameron</string>
+    <string name="pet_image">PetImage</string>
+    <string name="text_pet_description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Ab ad, asperiores consequatur consequuntur, dignissimos doloremque dolores ducimus error
+        nisi nulla numquam quae quibusdam quis sed sint? Aperiam atque beatae deleniti deserunt
+        dignissimos, dolore dolorum ea fugit ipsum iste, maiores maxime modi nostrum nulla obcaecati
+        perspiciatis quam recusandae repellendus, sed sit!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Ab ad, asperiores consequatur consequuntur, dignissimos doloremque dolores ducimus error
+        nisi nulla numquam quae quibusdam quis sed sint? Aperiam atque beatae deleniti deserunt
+        dignissimos, dolore dolorum ea fugit ipsum iste, maiores maxime modi nostrum nulla obcaecati
+        perspiciatis quam recusandae repellendus, sed sit!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Ab ad, asperiores consequatur consequuntur, dignissimos doloremque dolores ducimus error
+        nisi nulla numquam quae quibusdam quis sed sint? Aperiam atque beatae deleniti deserunt
+        dignissimos, dolore dolorum ea fugit ipsum iste, maiores maxime modi nostrum nulla obcaecati
+        perspiciatis quam recusandae repellendus, sed sit!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Ab ad, asperiores consequatur consequuntur, dignissimos doloremque dolores ducimus error
+        nisi nulla numquam quae quibusdam quis sed sint? Aperiam atque beatae deleniti deserunt
+        dignissimos, dolore dolorum ea fugit ipsum iste, maiores maxime modi nostrum nulla obcaecati
+        perspiciatis quam recusandae repellendus, sed sit!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Ab ad, asperiores consequatur consequuntur, dignissimos doloremque dolores ducimus error
+        nisi nulla numquam quae quibusdam quis sed sint? Aperiam atque beatae deleniti deserunt
+        dignissimos, dolore dolorum ea fugit ipsum iste, maiores maxime modi nostrum nulla obcaecati
+        perspiciatis quam recusandae repellendus, sed sit!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Ab ad, asperiores consequatur consequuntur, dignissimos doloremque dolores ducimus error
+        nisi nulla numquam quae quibusdam quis sed sint? Aperiam atque beatae deleniti deserunt
+        dignissimos, dolore dolorum ea fugit ipsum iste, maiores maxime modi nostrum nulla obcaecati
+        perspiciatis quam recusandae repellendus, sed sit!
+    </string>
+
 </resources>
