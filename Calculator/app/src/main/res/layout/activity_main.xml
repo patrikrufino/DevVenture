@@ -21,9 +21,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:baselineAligned="false"
         android:orientation="horizontal"
-        android:weightSum="4"
-        android:baselineAligned="false">
+        android:weightSum="4">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -35,7 +35,7 @@
                 android:id="@+id/btn_division"
                 style="@style/buttons"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="@string/signal_div"
                 app:cornerRadius="@dimen/corner_button" />
@@ -44,7 +44,7 @@
                 android:id="@+id/btn_seven"
                 style="@style/buttons"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="@string/signal_7"
                 app:cornerRadius="@dimen/corner_button" />
@@ -53,7 +53,7 @@
                 android:id="@+id/btn_four"
                 style="@style/buttons"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="@string/signal_4"
                 app:cornerRadius="@dimen/corner_button" />
@@ -62,7 +62,7 @@
                 android:id="@+id/one"
                 style="@style/buttons"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="@string/signal_1"
                 app:cornerRadius="@dimen/corner_button" />
@@ -78,7 +78,7 @@
                 android:id="@+id/btn_multiplication"
                 style="@style/buttons"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="@string/signal_mut"
                 app:cornerRadius="@dimen/corner_button" />
@@ -87,7 +87,7 @@
                 android:id="@+id/btn_eight"
                 style="@style/buttons"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="@string/signal_8"
                 app:cornerRadius="@dimen/corner_button" />
@@ -96,7 +96,7 @@
                 android:id="@+id/btn_five"
                 style="@style/buttons"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="@string/signal_5"
                 app:cornerRadius="@dimen/corner_button" />
@@ -105,7 +105,7 @@
                 android:id="@+id/two"
                 style="@style/buttons"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="@string/signal_2"
                 app:cornerRadius="@dimen/corner_button" />
@@ -121,7 +121,7 @@
                 android:id="@+id/btn_subtraction"
                 style="@style/buttons"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="@string/signal_sub"
                 app:cornerRadius="@dimen/corner_button" />
@@ -130,7 +130,7 @@
                 android:id="@+id/btn_nine"
                 style="@style/buttons"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="@string/signal_9"
                 app:cornerRadius="@dimen/corner_button" />
@@ -139,7 +139,7 @@
                 android:id="@+id/btn_six"
                 style="@style/buttons"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="@string/signal_6"
                 app:cornerRadius="@dimen/corner_button" />
@@ -148,7 +148,7 @@
                 android:id="@+id/btn_three"
                 style="@style/buttons"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="@string/signal_3"
                 app:cornerRadius="@dimen/corner_button" />
@@ -157,15 +157,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:weightSum="4">
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/btn_sum"
                 style="@style/buttons"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1.5"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:text="@string/signal_sum"
                 app:cornerRadius="@dimen/corner_button" />
 
@@ -173,25 +173,20 @@
                 android:id="@+id/btn_dot"
                 style="@style/buttons"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1.5"
-                android:text="@string/signal_dot"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/signal_equal"
                 app:cornerRadius="@dimen/corner_button" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/btn_equal"
-                    style="@style/buttons"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/signal_equal"
-                    app:cornerRadius="@dimen/corner_button" />
-            </LinearLayout>
+            <Button
+                android:id="@+id/btn_equal"
+                style="@style/buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="@string/signal_0"
+                app:cornerRadius="@dimen/corner_button" />
 
         </LinearLayout>
 

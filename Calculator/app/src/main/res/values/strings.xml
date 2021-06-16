@@ -14,6 +14,6 @@
     <string name="signal_6">6</string>
     <string name="signal_3">3</string>
     <string name="signal_sum">+</string>
-    <string name="signal_dot">.</string>
     <string name="signal_equal">=</string>
+    <string name="signal_0">0</string>
 </resources>
