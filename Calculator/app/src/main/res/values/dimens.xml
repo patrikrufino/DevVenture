@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="text_size_button">34dp</dimen>
+    <dimen name="text_size_button">34sp</dimen>
     <dimen name="margin_button">6dp</dimen>
+    <dimen name="corner_button">30dp</dimen>
+    <dimen name="elevation_button">10dp</dimen>
+    <dimen name="text_size_visor">34sp</dimen>
     <dimen name="margin_visor">16dp</dimen>
     <dimen name="padding_visor">16dp</dimen>
 </resources>

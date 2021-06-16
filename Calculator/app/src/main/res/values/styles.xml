@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="buttons">
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="android:layout_margin">@dimen/margin_button</item>
+        <item name="android:elevation">@dimen/elevation_button</item>
+    </style>
+
+    <style name="visor">
+        <item name="android:layout_margin">@dimen/margin_visor</item>
+        <item name="android:padding">@dimen/padding_visor</item>
+        <item name="android:textSize">@dimen/text_size_visor</item>
+        <item name="android:textAlignment">textEnd</item>
+    </style>
+</resources>
