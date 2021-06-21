@@ -1,0 +1,6 @@
+com/example/whatdoilearn/databinding/ActivityLearnedItemBinding.java
+ com.example.whatdoilearn.databinding.ActivityLearnedItemBinding
+com/example/whatdoilearn/BuildConfig.java
+ com.example.whatdoilearn.BuildConfig
+com/example/whatdoilearn/databinding/ActivityMainBinding.java
+ com.example.whatdoilearn.databinding.ActivityMainBinding
