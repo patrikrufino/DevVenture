@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="box_text_size">24sp</dimen>
-    <dimen name="box_size">130dp</dimen>
-    <dimen name="margin_simple">16sp</dimen>
+    <dimen name="default_size">16dp</dimen>
+    <dimen name="box_text_size">18sp</dimen>
+    <dimen name="layout_height">130dp</dimen>
+    <dimen name="layout_weight">130dp</dimen>
 </resources>

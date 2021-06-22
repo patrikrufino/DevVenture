@@ -4,32 +4,42 @@ package com.example.whatdoilearn.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import com.example.whatdoilearn.R;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
+
+  @NonNull
+  public final FloatingActionButton floatingActionButton6;
 
   @NonNull
   public final RecyclerView learnedItensRecyclerView;
 
-  private ActivityMainBinding(@NonNull LinearLayout rootView,
-      @NonNull RecyclerView learnedItensRecyclerView) {
+  @NonNull
+  public final ConstraintLayout linearLayout2;
+
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView,
+      @NonNull FloatingActionButton floatingActionButton6,
+      @NonNull RecyclerView learnedItensRecyclerView, @NonNull ConstraintLayout linearLayout2) {
     this.rootView = rootView;
+    this.floatingActionButton6 = floatingActionButton6;
     this.learnedItensRecyclerView = learnedItensRecyclerView;
+    this.linearLayout2 = linearLayout2;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -54,13 +64,22 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.floatingActionButton6;
+      FloatingActionButton floatingActionButton6 = rootView.findViewById(id);
+      if (floatingActionButton6 == null) {
+        break missingId;
+      }
+
       id = R.id.learnedItensRecyclerView;
       RecyclerView learnedItensRecyclerView = rootView.findViewById(id);
       if (learnedItensRecyclerView == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((LinearLayout) rootView, learnedItensRecyclerView);
+      ConstraintLayout linearLayout2 = (ConstraintLayout) rootView;
+
+      return new ActivityMainBinding((ConstraintLayout) rootView, floatingActionButton6,
+          learnedItensRecyclerView, linearLayout2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

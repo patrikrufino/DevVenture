@@ -18,7 +18,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.WhatDoILearn" >
-        <activity android:name="com.example.whatdoilearn.learned_item" />
+        <activity android:name="com.example.whatdoilearn.AddNewItem" />
+        <activity android:name="com.example.whatdoilearn.LearnedItem" />
         <activity android:name="com.example.whatdoilearn.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
