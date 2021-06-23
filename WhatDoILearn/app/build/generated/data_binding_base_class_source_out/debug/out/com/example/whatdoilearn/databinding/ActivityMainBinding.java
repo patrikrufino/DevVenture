@@ -20,7 +20,7 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final FloatingActionButton floatingActionButton6;
+  public final FloatingActionButton floatAddNewLearnedItem;
 
   @NonNull
   public final RecyclerView learnedItensRecyclerView;
@@ -29,10 +29,10 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ConstraintLayout linearLayout2;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FloatingActionButton floatingActionButton6,
+      @NonNull FloatingActionButton floatAddNewLearnedItem,
       @NonNull RecyclerView learnedItensRecyclerView, @NonNull ConstraintLayout linearLayout2) {
     this.rootView = rootView;
-    this.floatingActionButton6 = floatingActionButton6;
+    this.floatAddNewLearnedItem = floatAddNewLearnedItem;
     this.learnedItensRecyclerView = learnedItensRecyclerView;
     this.linearLayout2 = linearLayout2;
   }
@@ -64,9 +64,9 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.floatingActionButton6;
-      FloatingActionButton floatingActionButton6 = rootView.findViewById(id);
-      if (floatingActionButton6 == null) {
+      id = R.id.floatAddNewLearnedItem;
+      FloatingActionButton floatAddNewLearnedItem = rootView.findViewById(id);
+      if (floatAddNewLearnedItem == null) {
         break missingId;
       }
 
@@ -78,7 +78,7 @@ public final class ActivityMainBinding implements ViewBinding {
 
       ConstraintLayout linearLayout2 = (ConstraintLayout) rootView;
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, floatingActionButton6,
+      return new ActivityMainBinding((ConstraintLayout) rootView, floatAddNewLearnedItem,
           learnedItensRecyclerView, linearLayout2);
     }
     String missingId = rootView.getResources().getResourceName(id);

@@ -57,6 +57,10 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
+array preloaded_fonts
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -1039,6 +1043,7 @@ color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
 color green
+color grey_200
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color material_blue_grey_800
@@ -1692,6 +1697,8 @@ drawable notify_panel_notification_icon_bg
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font montserrat
+font montserrat_bold
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -1779,8 +1786,7 @@ id beginning
 id blocking
 id bottom
 id bounce
-id button
-id button2
+id buttonAdd
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -1861,8 +1867,8 @@ id filled
 id fitToContents
 id fixed
 id flip
+id floatAddNewLearnedItem
 id floating
-id floatingActionButton6
 id forever
 id fragment_container_view_tag
 id ghost_view
@@ -2384,9 +2390,13 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string priority
 string search_menu_title
+string simple_title
 string status_bar_notification_info_overflow
 string texto
+string textview
 string title
+string write_title_for_learned_item
+string write_what_do_you_want
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

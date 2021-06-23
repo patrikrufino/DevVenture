@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
         "source": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
         "merged": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/build/intermediates/res/merged/debug/layout_activity_learned_item.xml.flat",
@@ -20,6 +20,10 @@
         "source": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
+        "merged": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/build/intermediates/res/merged/debug/font_montserrat_bold.xml.flat",
+        "source": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/src/main/res/font/montserrat_bold.xml"
+    },
+    {
         "merged": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
@@ -28,12 +32,16 @@
         "source": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/build/intermediates/res/merged/debug/layout_activity_add_new_item.xml.flat",
+        "source": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/src/main/res/layout/activity_add_new_item.xml"
+    },
+    {
         "merged": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/build/intermediates/res/merged/debug/layout_activity_add_new_item.xml.flat",
-        "source": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/src/main/res/layout/activity_add_new_item.xml"
+        "merged": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/build/intermediates/res/merged/debug/font_montserrat.xml.flat",
+        "source": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/src/main/res/font/montserrat.xml"
     },
     {
         "merged": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",

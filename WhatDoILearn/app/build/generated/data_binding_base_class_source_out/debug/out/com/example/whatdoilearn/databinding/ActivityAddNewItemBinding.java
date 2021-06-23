@@ -23,10 +23,7 @@ public final class ActivityAddNewItemBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button button;
-
-  @NonNull
-  public final Button button2;
+  public final Button buttonAdd;
 
   @NonNull
   public final TextView descriptionNewItem;
@@ -55,15 +52,14 @@ public final class ActivityAddNewItemBinding implements ViewBinding {
   @NonNull
   public final TextView titleNewItem;
 
-  private ActivityAddNewItemBinding(@NonNull ConstraintLayout rootView, @NonNull Button button,
-      @NonNull Button button2, @NonNull TextView descriptionNewItem,
-      @NonNull EditText inputDescriptionNewItem, @NonNull EditText inputTitleNewItem,
-      @NonNull TextView levelNewItem, @NonNull RadioButton radioButtonHigh,
-      @NonNull RadioButton radioButtonLow, @NonNull RadioButton radioButtonMedium,
-      @NonNull RadioGroup radioGroup, @NonNull TextView titleNewItem) {
+  private ActivityAddNewItemBinding(@NonNull ConstraintLayout rootView, @NonNull Button buttonAdd,
+      @NonNull TextView descriptionNewItem, @NonNull EditText inputDescriptionNewItem,
+      @NonNull EditText inputTitleNewItem, @NonNull TextView levelNewItem,
+      @NonNull RadioButton radioButtonHigh, @NonNull RadioButton radioButtonLow,
+      @NonNull RadioButton radioButtonMedium, @NonNull RadioGroup radioGroup,
+      @NonNull TextView titleNewItem) {
     this.rootView = rootView;
-    this.button = button;
-    this.button2 = button2;
+    this.buttonAdd = buttonAdd;
     this.descriptionNewItem = descriptionNewItem;
     this.inputDescriptionNewItem = inputDescriptionNewItem;
     this.inputTitleNewItem = inputTitleNewItem;
@@ -102,15 +98,9 @@ public final class ActivityAddNewItemBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button;
-      Button button = rootView.findViewById(id);
-      if (button == null) {
-        break missingId;
-      }
-
-      id = R.id.button2;
-      Button button2 = rootView.findViewById(id);
-      if (button2 == null) {
+      id = R.id.buttonAdd;
+      Button buttonAdd = rootView.findViewById(id);
+      if (buttonAdd == null) {
         break missingId;
       }
 
@@ -168,7 +158,7 @@ public final class ActivityAddNewItemBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityAddNewItemBinding((ConstraintLayout) rootView, button, button2,
+      return new ActivityAddNewItemBinding((ConstraintLayout) rootView, buttonAdd,
           descriptionNewItem, inputDescriptionNewItem, inputTitleNewItem, levelNewItem,
           radioButtonHigh, radioButtonLow, radioButtonMedium, radioGroup, titleNewItem);
     }

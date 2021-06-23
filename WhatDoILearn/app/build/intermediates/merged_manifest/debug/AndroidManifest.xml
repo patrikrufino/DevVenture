@@ -9,6 +9,7 @@
         android:targetSdkVersion="30" />
 
     <application
+        android:name="com.example.whatdoilearn.WhatDidILearnApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -27,6 +28,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"

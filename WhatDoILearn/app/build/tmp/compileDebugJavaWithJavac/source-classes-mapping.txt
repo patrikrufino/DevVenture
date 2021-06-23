@@ -4,11 +4,12 @@ com/example/whatdoilearn/BuildConfig.java
  com.example.whatdoilearn.BuildConfig
 com/example/whatdoilearn/databinding/ActivityAddNewItemBinding.java
  com.example.whatdoilearn.databinding.ActivityAddNewItemBinding
-com/example/whatdoilearn/data/LearnedItemDao_Impl.java
- com.example.whatdoilearn.data.LearnedItemDao_Impl
- com.example.whatdoilearn.data.LearnedItemDao_Impl$1
-com/example/whatdoilearn/data/LearnItemDatabase_Impl.java
- com.example.whatdoilearn.data.LearnItemDatabase_Impl
- com.example.whatdoilearn.data.LearnItemDatabase_Impl$1
+com/example/whatdoilearn/data/database/LearnItemDatabase_Impl.java
+ com.example.whatdoilearn.data.database.LearnItemDatabase_Impl
+ com.example.whatdoilearn.data.database.LearnItemDatabase_Impl$1
+com/example/whatdoilearn/data/database/LearnedItemDao_Impl.java
+ com.example.whatdoilearn.data.database.LearnedItemDao_Impl
+ com.example.whatdoilearn.data.database.LearnedItemDao_Impl$1
+ com.example.whatdoilearn.data.database.LearnedItemDao_Impl$2
 com/example/whatdoilearn/databinding/ActivityMainBinding.java
  com.example.whatdoilearn.databinding.ActivityMainBinding
