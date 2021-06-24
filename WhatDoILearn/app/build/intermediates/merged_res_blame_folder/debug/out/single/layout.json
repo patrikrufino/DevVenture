@@ -1,14 +1,14 @@
 [
     {
-        "merged": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_learned_item.xml",
-        "source": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/src/main/res/layout/activity_learned_item.xml"
+        "merged": "/home/patrik/Development/DevVenture/WhatDoILearn/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_learned_item.xml",
+        "source": "/home/patrik/Development/DevVenture/WhatDoILearn/app/src/main/res/layout/activity_learned_item.xml"
     },
     {
-        "merged": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
-        "source": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/src/main/res/layout/activity_main.xml"
+        "merged": "/home/patrik/Development/DevVenture/WhatDoILearn/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_add_new_item.xml",
+        "source": "/home/patrik/Development/DevVenture/WhatDoILearn/app/src/main/res/layout/activity_add_new_item.xml"
     },
     {
-        "merged": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_add_new_item.xml",
-        "source": "/home/patrikrufino/Development/DevVenture/WhatDoILearn/app/src/main/res/layout/activity_add_new_item.xml"
+        "merged": "/home/patrik/Development/DevVenture/WhatDoILearn/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/home/patrik/Development/DevVenture/WhatDoILearn/app/src/main/res/layout/activity_main.xml"
     }
 ]

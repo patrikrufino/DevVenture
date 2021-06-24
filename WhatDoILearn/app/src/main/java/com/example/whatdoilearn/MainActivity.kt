@@ -6,10 +6,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.example.whatdoilearn.databinding.ActivityMainBinding
 import com.example.whatdoilearn.view.LearnedItemAdapter
+import com.example.whatdoilearn.viewmodel.MainViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+
+    private val viewModel: MainViewModel by viewModel()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,8 +24,7 @@ class MainActivity : AppCompatActivity() {
         val adapter = LearnedItemAdapter()
         recycler.adapter = adapter
 
-        val repository = (application as WhatDidILearnApplication).repository
-        val items = repository.learnedItems
+        val items = viewModel.learnedItems
 
         items.observe(this, Observer {
             adapter.learnedItems = it
