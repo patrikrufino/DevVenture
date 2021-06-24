@@ -60,12 +60,14 @@ abstract class LearnItemDatabase : RoomDatabase() {
                 ),
                 LearnedItem(
                     name = "RecyclerView",
-                    description = "Listas em Android",
+                    description = "A nível organizacional, o surgimento do comércio virtual é uma das consequências das regras de conduta normativas. Caros amigos, a adoção de políticas descentralizadoras facilita a criação dos níveis de motivação departamental. O cuidado em identificar pontos críticos na contínua expansão de nossa atividade maximiza as possibilidades por conta dos paradigmas corporativos. ",
                     understandingLevel = UnderstandingLevel.MEDIUM
                 ),
                 LearnedItem(
                     name = "DataClass",
-                    description = "Kotlin data Class",
+                    description = " Por outro lado, a complexidade dos estudos efetuados pode nos levar a considerar a reestruturação do sistema de formação de quadros que corresponde às necessidades. Do mesmo modo, o novo modelo estrutural aqui preconizado talvez venha a ressaltar a relatividade dos relacionamentos verticais entre as hierarquias. Todavia, o desenvolvimento contínuo de distintas formas de atuação causa impacto indireto na reavaliação dos procedimentos normalmente adotados. No entanto, não podemos esquecer que o desafiador cenário globalizado cumpre um papel essencial na formulação das diretrizes de desenvolvimento para o futuro.\n" +
+                            "\n" +
+                            "          A certificação de metodologias que nos auxiliam a lidar com o julgamento imparcial das eventualidades representa uma abertura para a melhoria dos métodos utilizados na avaliação de resultados. Acima de tudo, é fundamental ressaltar que a revolução dos costumes deve passar por modificações independentemente dos índices pretendidos. É importante questionar o quanto o início da atividade geral de formação de atitudes auxilia a preparação e a composição das condições inegavelmente apropriadas. ",
                     understandingLevel = UnderstandingLevel.LOW
                 ),
                 LearnedItem(
