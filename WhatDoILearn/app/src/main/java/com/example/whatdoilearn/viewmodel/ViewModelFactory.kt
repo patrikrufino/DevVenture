@@ -10,7 +10,7 @@ class ViewModelFactory (private val repository: LearnedItemRepository): ViewMode
         if(modelClass.isAssignableFrom(MainViewModel::class.java)){
             return MainViewModel(repository) as T
         }
-        throw IllegalArgumentException("ViewModel desconhecida!")
+        throw IllegalArgumentException("ViewModel unknown!")
     }
 
 

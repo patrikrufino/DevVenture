@@ -2,6 +2,7 @@ package com.example.whatdoilearn.DI
 
 import com.example.whatdoilearn.data.LearnedItemRepository
 import com.example.whatdoilearn.data.database.LearnItemDatabase
+import com.example.whatdoilearn.viewmodel.AddNewItemModel
 import com.example.whatdoilearn.viewmodel.MainViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -24,6 +25,10 @@ object LearnedItemModel {
         }
         viewModel {
             MainViewModel(get())
+        }
+
+        viewModel {
+            AddNewItemModel(get())
         }
     }
 }

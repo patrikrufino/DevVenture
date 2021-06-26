@@ -18,7 +18,7 @@ abstract class LearnItemDatabase : RoomDatabase() {
     abstract fun learnedItemDao(): LearnedItemDao
 
     companion object {
-        @Volatile
+
         var INSTANCE: LearnItemDatabase? = null
 
         fun getDatabase(context: Context, scope: CoroutineScope): LearnItemDatabase {
@@ -46,7 +46,7 @@ abstract class LearnItemDatabase : RoomDatabase() {
             }
         }
 
-        private fun populateDatabase(learnedItemDao: LearnedItemDao) {
+        private suspend fun populateDatabase(learnedItemDao: LearnedItemDao) {
             val items = getAll()
             learnedItemDao.insert(items)
         }

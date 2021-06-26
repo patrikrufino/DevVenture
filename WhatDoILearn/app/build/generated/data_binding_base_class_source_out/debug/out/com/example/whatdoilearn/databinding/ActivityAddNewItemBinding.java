@@ -38,6 +38,9 @@ public final class ActivityAddNewItemBinding implements ViewBinding {
   public final TextView levelNewItem;
 
   @NonNull
+  public final RadioGroup priorityRadioGroup;
+
+  @NonNull
   public final RadioButton radioButtonHigh;
 
   @NonNull
@@ -47,16 +50,13 @@ public final class ActivityAddNewItemBinding implements ViewBinding {
   public final RadioButton radioButtonMedium;
 
   @NonNull
-  public final RadioGroup radioGroup;
-
-  @NonNull
   public final TextView titleNewItem;
 
   private ActivityAddNewItemBinding(@NonNull ConstraintLayout rootView, @NonNull Button buttonAdd,
       @NonNull TextView descriptionNewItem, @NonNull EditText inputDescriptionNewItem,
       @NonNull EditText inputTitleNewItem, @NonNull TextView levelNewItem,
-      @NonNull RadioButton radioButtonHigh, @NonNull RadioButton radioButtonLow,
-      @NonNull RadioButton radioButtonMedium, @NonNull RadioGroup radioGroup,
+      @NonNull RadioGroup priorityRadioGroup, @NonNull RadioButton radioButtonHigh,
+      @NonNull RadioButton radioButtonLow, @NonNull RadioButton radioButtonMedium,
       @NonNull TextView titleNewItem) {
     this.rootView = rootView;
     this.buttonAdd = buttonAdd;
@@ -64,10 +64,10 @@ public final class ActivityAddNewItemBinding implements ViewBinding {
     this.inputDescriptionNewItem = inputDescriptionNewItem;
     this.inputTitleNewItem = inputTitleNewItem;
     this.levelNewItem = levelNewItem;
+    this.priorityRadioGroup = priorityRadioGroup;
     this.radioButtonHigh = radioButtonHigh;
     this.radioButtonLow = radioButtonLow;
     this.radioButtonMedium = radioButtonMedium;
-    this.radioGroup = radioGroup;
     this.titleNewItem = titleNewItem;
   }
 
@@ -128,6 +128,12 @@ public final class ActivityAddNewItemBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.priorityRadioGroup;
+      RadioGroup priorityRadioGroup = rootView.findViewById(id);
+      if (priorityRadioGroup == null) {
+        break missingId;
+      }
+
       id = R.id.radioButtonHigh;
       RadioButton radioButtonHigh = rootView.findViewById(id);
       if (radioButtonHigh == null) {
@@ -146,12 +152,6 @@ public final class ActivityAddNewItemBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.radioGroup;
-      RadioGroup radioGroup = rootView.findViewById(id);
-      if (radioGroup == null) {
-        break missingId;
-      }
-
       id = R.id.titleNewItem;
       TextView titleNewItem = rootView.findViewById(id);
       if (titleNewItem == null) {
@@ -160,7 +160,7 @@ public final class ActivityAddNewItemBinding implements ViewBinding {
 
       return new ActivityAddNewItemBinding((ConstraintLayout) rootView, buttonAdd,
           descriptionNewItem, inputDescriptionNewItem, inputTitleNewItem, levelNewItem,
-          radioButtonHigh, radioButtonLow, radioButtonMedium, radioGroup, titleNewItem);
+          priorityRadioGroup, radioButtonHigh, radioButtonLow, radioButtonMedium, titleNewItem);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

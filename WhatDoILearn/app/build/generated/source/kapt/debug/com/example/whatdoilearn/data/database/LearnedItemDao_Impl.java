@@ -11,12 +11,15 @@ import androidx.sqlite.db.SupportSQLiteStatement;
 import com.example.whatdoilearn.entities.LearnedItem;
 import com.example.whatdoilearn.entities.UnderstandingLevel;
 import java.lang.Exception;
+import java.lang.Object;
 import java.lang.Override;
 import java.lang.String;
 import java.lang.SuppressWarnings;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
 
 @SuppressWarnings({"unchecked", "deprecation"})
 public final class LearnedItemDao_Impl implements LearnedItemDao {
@@ -31,7 +34,7 @@ public final class LearnedItemDao_Impl implements LearnedItemDao {
     this.__insertionAdapterOfLearnedItem = new EntityInsertionAdapter<LearnedItem>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `learned_item` (`item_id`,`item_name`,`item_description`,`item_level`) VALUES (nullif(?, 0),?,?,?)";
+        return "INSERT OR REPLACE INTO `learned_item` (`item_id`,`item_name`,`item_description`,`item_level`) VALUES (nullif(?, 0),?,?,?)";
       }
 
       @Override
@@ -55,27 +58,13 @@ public final class LearnedItemDao_Impl implements LearnedItemDao {
   }
 
   @Override
-  public void insert(final LearnedItem item) {
+  public Object insert(final LearnedItem item, final Continuation<? super Unit> p1) {
     __db.assertNotSuspendingTransaction();
-    __db.beginTransaction();
-    try {
-      __insertionAdapterOfLearnedItem.insert(item);
-      __db.setTransactionSuccessful();
-    } finally {
-      __db.endTransaction();
-    }
   }
 
   @Override
-  public void insert(final List<LearnedItem> item) {
+  public Object insert(final List<LearnedItem> item, final Continuation<? super Unit> p1) {
     __db.assertNotSuspendingTransaction();
-    __db.beginTransaction();
-    try {
-      __insertionAdapterOfLearnedItem.insert(item);
-      __db.setTransactionSuccessful();
-    } finally {
-      __db.endTransaction();
-    }
   }
 
   @Override

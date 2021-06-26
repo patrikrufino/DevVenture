@@ -7,7 +7,7 @@ import com.example.whatdoilearn.entities.LearnedItem
 class LearnedItemRepository(private val dao: LearnedItemDao) {
     val learnedItems: LiveData<List<LearnedItem>> =dao.getAll()
 
-    fun addNewItem(item: LearnedItem) {
+    suspend fun insert(item: LearnedItem) {
         dao.insert(item)
     }
 }
