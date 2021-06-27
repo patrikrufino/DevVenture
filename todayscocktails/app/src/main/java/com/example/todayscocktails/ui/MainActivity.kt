@@ -32,8 +32,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initRecyclerView() {
-        getNameById()
-        DrinkRemoteEntity.id()
         mAdapter = DrinkAdapter()
+        binding.learnedItensRecyclerView.apply {
+            adapter = mAdapter
+        }
     }
 }
