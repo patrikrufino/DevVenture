@@ -41,7 +41,7 @@ class DrinkItemActivity : AppCompatActivity() {
         lifecycleScope.launch {
             try {
                 val response = requestDrinks()
-                val drink = response.drinksList.random()
+                val drink = response.drinks.random()
                 drinkTitle.text = drink.strDrink
                 Glide.with(this@DrinkItemActivity)
                     .load(drink.strDrinkThumb)

@@ -1,16 +1,19 @@
 package com.example.todayscocktails.ui.view
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.todayscocktails.DrinkDetails
 import com.example.todayscocktails.R
 import com.example.todayscocktails.data.model.DrinkRemoteEntity
 
-class DrinkAdapter : RecyclerView.Adapter<DrinkAdapter.MyViewHolder>() {
+class DrinkAdapter (var drinkDetails: DrinkDetails): RecyclerView.Adapter<DrinkAdapter.MyViewHolder>() {
     var drinkList = listOf<DrinkRemoteEntity>()
         set(value) {
             field = value
@@ -30,6 +33,19 @@ class DrinkAdapter : RecyclerView.Adapter<DrinkAdapter.MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val view = layoutInflater.inflate(R.layout.activity_drink_item, parent, false)
+        view.setOnClickListener{
+           //busca pelo id
+           var ingredients = "${drinkDetails.strIngredient1},${drinkDetails.strIngredient2}," +
+                   "${drinkDetails.strIngredient3}," +
+                   "${drinkDetails.strIngredient4},${drinkDetails.strIngredient5},${drinkDetails.strIngredient6}"
+           //chamar a intent de compartilhamento
+            val sendIntent: Intent = Intent().apply {
+                action = Intent.ACTION_SEND
+                putExtra(Intent.EXTRA_TEXT, ingredients)
+                type = "text/plain"
+            }
+            parent.context.startActivity(sendIntent)
+        }
         return MyViewHolder(view)
     }
 

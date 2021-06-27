@@ -9,5 +9,5 @@ import com.example.todayscocktails.data.model.DrinkRemoteEntity
 interface DrinkDao {
 
     @Query("SELECT * FROM drinks_entity")
-    fun getAllDrinks(): LiveData<List<DrinkRemoteEntity>>
+    fun getAllDrinks(): List<DrinkRemoteEntity>?
 }

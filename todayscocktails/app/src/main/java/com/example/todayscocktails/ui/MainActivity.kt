@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import androidx.lifecycle.Observer
+import com.example.todayscocktails.data.model.DrinkRemoteEntity
 import com.example.todayscocktails.databinding.ActivityMainBinding
 import com.example.todayscocktails.viewmodel.DrinkViewModel
 import com.example.todayscocktails.ui.view.DrinkAdapter
@@ -31,6 +32,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initRecyclerView() {
+        getNameById()
+        DrinkRemoteEntity.id()
         mAdapter = DrinkAdapter()
     }
 }
