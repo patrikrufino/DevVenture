@@ -1,5 +1,6 @@
 package com.example.todayscocktails.data.repository
 
+import com.example.todayscocktails.DrinkDetails
 import com.example.todayscocktails.data.db.DrinkDao
 import com.example.todayscocktails.data.model.DrinkRemoteEntity
 import com.example.todayscocktails.data.network.CocktailService
@@ -10,6 +11,12 @@ class DrinkRepository(private val dao: DrinkDao) : IDrinkRepository {
 
     override suspend fun getAllDrinks(): List<DrinkRemoteEntity>? {
         return getDrinksFromDB()
+    }
+
+    override suspend fun getDrinkByName(name: String): DrinkDetails? {
+        return withContext(Dispatchers.IO) {
+            CocktailService.service.getDrinkByName(name)
+        }
     }
 
     private suspend fun getDrinksFromDB(): List<DrinkRemoteEntity>? {

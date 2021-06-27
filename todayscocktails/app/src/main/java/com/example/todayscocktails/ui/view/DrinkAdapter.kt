@@ -8,17 +8,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.todayscocktails.DrinkDetails
 import com.example.todayscocktails.R
 import com.example.todayscocktails.data.model.DrinkRemoteEntity
+import com.example.todayscocktails.viewmodel.DrinkViewModel
 
-class DrinkAdapter (): RecyclerView.Adapter<DrinkAdapter.MyViewHolder>() {
+class DrinkAdapter(val viewModel: DrinkViewModel) : RecyclerView.Adapter<DrinkAdapter.MyViewHolder>() {
     var drinkList = listOf<DrinkRemoteEntity>()
-        set(value) {
-            field = value
-            notifyDataSetChanged()
-        }
-
-    var drinkDetails = listOf<DrinkRemoteEntity>()
         set(value) {
             field = value
             notifyDataSetChanged()
@@ -33,27 +29,29 @@ class DrinkAdapter (): RecyclerView.Adapter<DrinkAdapter.MyViewHolder>() {
             Glide.with(itemView.context).load(drink.strDrinkThumb).into(drinkImage)
 
             itemView.setOnClickListener {
-
                 // 1. consultar o item pelo nome
                 // 2. fazer uma string com os dados que quer compartilhar
                 // 3. criar uma intent pra compartilhar o conteúdo
 
+                var drinkDetails = viewModel.getDrinkByName(drink.strDrink)
 
-//                var ingredients = """${drinkDetails.strIngredient1},
-//               ${drinkDetails.strIngredient2},
-//                   ${drinkDetails.strIngredient3},
-//                   ${drinkDetails.strIngredient4},
-//                   ${drinkDetails.strIngredient5},
-//                   ${drinkDetails.strIngredient6}"""
-                //chamar a intent de compartilhamento
+                if (drinkDetails != null) {
+                    val ingredients = """
+                       ${drinkDetails.strIngredient1}, 
+                       ${drinkDetails.strIngredient2}, 
+                       ${drinkDetails.strIngredient3}, 
+                       ${drinkDetails.strIngredient4}, 
+                       ${drinkDetails.strIngredient5}, 
+                       ${drinkDetails.strIngredient6}
+                    """
 
-
-                val sendIntent: Intent = Intent().apply {
-                    action = Intent.ACTION_SEND
-                    putExtra(Intent.EXTRA_TEXT, "ingredients")
-                    type = "text/plain"
+                    val sendIntent: Intent = Intent().apply {
+                        action = Intent.ACTION_SEND
+                        putExtra(Intent.EXTRA_TEXT, ingredients)
+                        type = "text/plain"
+                    }
+                    itemView.context.startActivity(sendIntent)
                 }
-                itemView.context.startActivity(sendIntent)
             }
         }
     }
@@ -61,10 +59,8 @@ class DrinkAdapter (): RecyclerView.Adapter<DrinkAdapter.MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val view = layoutInflater.inflate(R.layout.activity_drink_item, parent, false)
-        view.setOnClickListener{
+        view.setOnClickListener {
             //busca pelo nome
-
-
 
 
         }

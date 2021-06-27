@@ -1,13 +1,12 @@
 package com.example.todayscocktails.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import org.koin.androidx.viewmodel.ext.android.viewModel
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
-import com.example.todayscocktails.data.model.DrinkRemoteEntity
 import com.example.todayscocktails.databinding.ActivityMainBinding
-import com.example.todayscocktails.viewmodel.DrinkViewModel
 import com.example.todayscocktails.ui.view.DrinkAdapter
+import com.example.todayscocktails.viewmodel.DrinkViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity() {
     private var _binding: ActivityMainBinding? = null
@@ -32,7 +31,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initRecyclerView() {
-        mAdapter = DrinkAdapter()
+        mAdapter = DrinkAdapter(viewModel)
         binding.learnedItensRecyclerView.apply {
             adapter = mAdapter
         }
