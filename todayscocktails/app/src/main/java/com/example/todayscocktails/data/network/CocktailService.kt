@@ -1,4 +1,4 @@
-package com.example.todayscocktails.data.newtwork
+package com.example.todayscocktails.data.network
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -16,3 +16,4 @@ object CocktailService {
         retrofit.create(TheCocktailApi::class.java)
     }
 }
+

@@ -1,8 +1,8 @@
-package com.example.todayscocktails.data
+package com.example.todayscocktails.data.model
 
 import com.google.gson.annotations.SerializedName
 
 data class DrinksListRemoteEntity(
     @SerializedName("drinks")
-    val drinksList: List<DrinkRemoteEntity>
+    val drinks: List<DrinkRemoteEntity>
 )

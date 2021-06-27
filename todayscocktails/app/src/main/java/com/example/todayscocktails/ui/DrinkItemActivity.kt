@@ -1,4 +1,4 @@
-package com.example.todayscocktails
+package com.example.todayscocktails.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,11 +6,11 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.lifecycle.lifecycleScope
 import com.bumptech.glide.Glide
-import com.example.todayscocktails.data.DrinksListRemoteEntity
-import com.example.todayscocktails.data.newtwork.CocktailService
+import com.example.todayscocktails.R
+import com.example.todayscocktails.data.model.DrinksListRemoteEntity
+import com.example.todayscocktails.data.network.CocktailService
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

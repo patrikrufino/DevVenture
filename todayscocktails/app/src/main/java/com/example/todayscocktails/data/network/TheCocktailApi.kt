@@ -1,6 +1,6 @@
-package com.example.todayscocktails.data.newtwork
+package com.example.todayscocktails.data.network
 
-import com.example.todayscocktails.data.DrinksListRemoteEntity
+import com.example.todayscocktails.data.model.DrinksListRemoteEntity
 import retrofit2.http.GET
 
 interface TheCocktailApi {
