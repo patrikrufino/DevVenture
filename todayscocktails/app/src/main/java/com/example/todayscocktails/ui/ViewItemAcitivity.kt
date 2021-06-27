@@ -7,6 +7,6 @@ import com.example.todayscocktails.R
 class ViewItemAcitivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_view_item_acitivity)
+        setContentView(R.layout.activity_drink_item)
     }
 }
